@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antelope Facts</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #339933;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Main Content Styling with Background Image */
+        main {
+            padding: 80px 15%;
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 90px; /* to prevent content from going under navbar */
+            background-image: url('https://animals.sandiegozoo.org/sites/default/files/2016-09/animals_hero_antelope.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            line-height: 1.8;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #339933;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                padding: 40px 5%;
+            }
+
+            main h2 {
+                font-size: 24px;
+            }
+
+            main p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section with Background Image -->
+    <main>
+        <h2>Antelope Facts</h2>
+        <p>Did you know that antelopes are a diverse group of herbivorous mammals found primarily in Africa and parts of Asia?</p>
+        <p>Antelopes are known for their agility and speed, which helps them evade predators such as lions and cheetahs.</p>
+        <p>There are over 90 species of antelopes, ranging in size from the tiny royal antelope to the large eland.</p>
+        <p>Many antelope species form herds for protection and foraging. These herds can range in size from a few individuals to thousands.</p>
+        <p>Antelopes have excellent senses, including keen eyesight and hearing, which help them detect predators and other dangers.</p>
+        <p>Antelopes play a crucial role in their ecosystems by grazing on vegetation, which helps maintain the balance of plant populations.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Created by Edward</p>
+    </footer>
+
+</body>
+</html>

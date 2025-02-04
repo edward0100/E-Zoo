@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Cheetahs</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(34, 185, 231);
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 50px 10%;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        main p {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #FFD700;
+            font-weight: 600;
+            margin-top: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #FFD700;
+            text-align: center;
+            font-size: 18px;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            main {
+                padding: 30px 5%;
+            }
+
+            footer {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content Section -->
+    <main>
+        <div class="img">
+            <img src="https://imgs.search.brave.com/SzLnYBjTqa28t6QQ7QAVGp3OqviT8paavrgN8EMhISg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzI5LzQ1LzM4/LzM2MF9GXzkyOTQ1/MzgzM19VWU5nTTVM/eEVDWWY4ajhVbnY4/S1VneVNXYjN4VmxY/Qi5qcGc" alt="A majestic cheetah in the wild">
+        </div>
+        <p>Cheetahs are known for their incredible speed and agility. They can reach speeds of up to 70 miles per hour!</p>
+        <h2>Fascinating Facts about Cheetahs:</h2>
+        <ul>
+            <li>They have distinctive black spots on their golden coats.</li>
+            <li>Cheetahs are excellent hunters, relying on their speed to catch prey.</li>
+            <li>Unlike other big cats, cheetahs cannot roar.</li>
+            <li>They are primarily found in Africa.</li>
+        </ul>
+        <p>Learn more about these magnificent creatures and their habitat!</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Created by Edward</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+}
+
+/* Header Section with background image */
+.heading {
+    background-image: url('https://img.freepik.com/free-photo/field-covered-grass-trees-surrounded-by-zebras-sunlight-sunset_181624-18641.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.heading h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading h2 {
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+/* Modern Navigation Bar */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigation a:hover {
+    background-color: #ff9800; /* Orange color on hover */
+    transform: scale(1.1);
+}
+
+/* Section styling for the animals */
+.animals {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.animals h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff9800;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Card styling */
+.animal-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.animal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.animal-card h4 {
+    margin-top: 10px;
+    color: #ff9800;
+    font-size: 24px;
+}
+
+.animal-card p {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.animal-card button {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.animal-card button:hover {
+    background-color: #666;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .animal-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .animal-card {
+        width: 100%;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eddie's Zoo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="heading">
+            <h1>Welcome to Eddie's Zoo!</h1>
+            <h2>Amazing facts about some wild animals</h2>
+        </header>
+
+        <main class="main-content">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <section class="animals">
+                <h3>Meet Our Wild Animals!</h3>
+                <div class="animal-card">
+                    <img src="https://imgs.search.brave.com/_6zWXD1QfRzcu5ZXDXcm6IJNO_Wyhk8YSvlyFBBzKio/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMy/MTUzNzcvcGhvdG8v/bGlvbi1wYW50aGVy/YS1sZW8uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPW9ELXRs/ZjlZLTBIMU5kQ2Zq/UUF0ZGxsWW1GTXlJ/Rm5HRm84TU84SEYx/WFU9" alt="Lion">
+                    <h4>Lion</h4>
+                    <p>Lions are the most fiercest wild cats, mostly found in Africa.</p>
+                    <a href="lions.html"><button>Learn More</button></a>
+                </div>
+                <div class="animal-card">
+                    <img src="https://cdn.britannica.com/52/152452-050-9C11AEDD/Cheetah-running.jpg" alt="Cheetah">
+                    <h4>Cheetah</h4>
+                    <p>Known for high speeds, Cheetahs are the fastest land mammals.</p>
+                    <a href="cheetahs.html"><button>Learn More</button></a>
+                </div>
+                <div class="animal-card">
+                    <img src="https://imgs.search.brave.com/yMWb3H9H1HAtDNAcFC9n5cU-OyNCvxqHkphc8N78YMI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc0/OTA1NTc0L3Bob3Rv/L3dvbGYuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTQxaWx1/dEIxbkVoUlVoSUtv/bUpENHlJX2lnNTBG/MTlla1ZEaWNMYnVQ/eHM9" alt="Wolf">
+                    <h4>Wolf</h4>
+                    <p>Wolves are known for hunting in packs.</p>
+                    <a href="wolf.html"><button>Learn More</button></a>
+                </div>
+                <div class="animal-card">
+                    <img src="https://d1jyxxz9imt9yb.cloudfront.net/medialib/4059/image/s768x1300/AdobeStock_362156363_441361_reduced.jpg" alt="Antelope">
+                    <h4>Antelope</h4>
+                    <p>Antelopes are known for their agility, found mostly in Africa.</p>
+                    <a href="antelope.html"><button>Learn More</button></a>
+                </div>
+                <div class="animal-card">
+                    <img src="https://www.bordermail.com.au/images/transform/v1/crop/frm/SgEWtArqkCthgfLpXexM33/9f65ee83-bb35-4278-b72f-fbecdeba246b.jpg/r0_59_800_509_w1200_h678_fmax.jpg" alt="Snake">
+                    <h4>Snake</h4>
+                    <p>Snakes are among the most dangerous animals on earth.</p>
+                    <a href="snakes.html"><button>Learn More</button></a>
+                </div>
+                <div class="animal-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Ours_brun_parcanimalierpyrenees_1.jpg" alt="Bear">
+                    <h4>Bear</h4>
+                    <p>Bears are the biggest members of the dog family.</p>
+                    <a href="bear.html"><button>Learn More</button></a>
+                </div>
+                <div class="animal-card">
+                    <img src="https://imgs.search.brave.com/0pSil6P5yi6xzEYk06OnW3LE_r3p4pxfppXb51mVB00/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzI1LzY0LzUz/LzM2MF9GXzEyNTY0/NTMyOV9QYzZSbjFz/b1V1QVp5SGdwNERZ/eFhLVVhJVFNGQ2Mx/Ui5qcGc" alt="Fox">
+                    <h4>Fox</h4>
+                    <p>Foxes are small but agile animals, hunting mostly rabbits.</p>
+                    <a href="fox.html"><button>Learn More</button></a>
+                </div>
+                <div class="animal-card">
+                    <img src="https://i.natgeofe.com/k/64a17a68-7f3b-4246-850c-af430ab3d966/great-white-og_4x3.jpg" alt="Shark">
+                    <h4>Shark</h4>
+                    <p>Sharks are fierce hunters in the oceans with powerful bites.</p>
+                    <a href="shark.html"><button>Learn More</button></a>
+                </div>
+                <div class="animal-card">
+                    <img src="https://imgs.search.brave.com/FFy-tsLwUW97J4tpfkddNCJvMTTbEQhoPaLqzN7J_Ac/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODI0/OTAzNjg2L3Bob3Rv/L2Z1bm5lbF9zcGlk/ZXIuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUVLS3FwWFcx/dVBFZlhCVDlad0kt/dmg0MWcyOF9zTmE0/bF9ZSEc3dVFIM009" alt="Spider">
+                    <h4>Spider</h4>
+                    <p>Spiders are arachnids, known for their ability to spin webs.</p>
+                    <a href="spiders.html"><button>Learn More</button></a>
+                </div>                
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Eddie's Zoo. All rights reserved.</p>
+        </footer>
+    </body>
+</html>         

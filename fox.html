@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Facts</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #fff;
+            background-image: url('https://maymont.org/wp-content/uploads/2020/04/banner-red-fox.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #000; /* Black background */
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 60px 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark background for readability */
+            margin: 40px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        main p {
+            line-height: 1.6;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #000; /* Black background */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            main {
+                padding: 30px 10px;
+            }
+
+            main p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <p>Did you know that foxes belong to the Canidae family, which also includes wolves and domestic dogs?</p>
+        <p>Foxes are highly adaptable animals and can thrive in a variety of environments, from forests and grasslands to urban areas.</p>
+        <p>There are about 37 species of foxes found around the world, including the red fox, Arctic fox, and fennec fox.</p>
+        <p>Foxes are known for their intelligence and cunning behavior. They are skilled hunters and have been known to use their intelligence to outwit prey.</p>
+        <p>Many fox species are nocturnal, meaning they are most active at night.</p>
+        <p>Female foxes are called vixens, and they typically give birth to litters of 4 to 6 pups.</p>
+    </main>
+
+
+</body>
+</html>
